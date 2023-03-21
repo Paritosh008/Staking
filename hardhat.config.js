@@ -7,13 +7,13 @@ module.exports = {
   solidity: "0.8.6",
   settings:{
     optimizer:{
-      enables:true,
+      enabled:true,
       runs:200
     }
   },
   networks:{
     hardhat:{
-      chainId:1337
+      chainId:1337  //chainId 1337 is for localhost
     },
     goerli:{
       url: `https://goerli.infura.io/v3/${process.env.INFURA_API_KEY}`,
@@ -28,9 +28,9 @@ module.exports = {
   gasReporter:{
     enabled:true,
     currency:"INR",
-    coinmarketcap:process.env.COINMARKETCAP,
-    token:"matic",
-    outputFile:"gasReports.txt",
-    noColors:true
+    outputFile:"gasReports2.txt",
+    noColors:true,
+    coinmarketcap:"1a0e61d7-45ed-427e-96a7-ab5488edba52"
+    
   }
   }
